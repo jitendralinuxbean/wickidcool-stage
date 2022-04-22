@@ -8,23 +8,16 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi Thier</h1>
-    <p>Welcome Page Wickidcool</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    <section className="my-5" style={{ paddingBottom: `350px` }}>
+        <div className="container">
+            <div className="row">
+            <Seo title="Projects" />
+    <h1>Projects</h1>
+    <p>We are a full-service technology company specializing in web based applications. We are able to assess your current IT infrastructure processes/procedures, guide you through and implement cost saving strategies for moving your infrastructure to the cloud, integrate your applications so they work more efficiently together as well as develop/implement custom software solutions to automate inefficiencies out of your company.</p>
+
+            </div>
+        </div>
+    </section>
   </Layout>
 )
 
