@@ -8,7 +8,8 @@ const Header = ({ siteTitle }) => (
   <header>
      <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="Sitebrand" href="#">
+      
+      <Link className="Sitebrand" to="/">
       <StaticImage
         src="../images/wickidcool-logo.png"
         width={327}
@@ -17,7 +18,7 @@ const Header = ({ siteTitle }) => (
         alt="Wickidcool"
         style={{ marginBottom: `1.45rem` }}
       />
-      </a>
+      </Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="navbar-toggler-icon"></span>
@@ -44,6 +45,7 @@ const Header = ({ siteTitle }) => (
       </ul>
       <div class="rightSocial">
        <span>
+       <Link to="#">
          <StaticImage
       src="../images/facebookIcon.png"
       width={32}
@@ -51,14 +53,14 @@ const Header = ({ siteTitle }) => (
       //quality={32}
       //formats={["auto", "webp", "avif"]}      
       />
-       @wickidcool</span>
+       &nbsp;@wickidcool</Link></span>
 
-       <span><StaticImage
+       <span><Link to="#"><StaticImage
       src="../images/linkedInIcon.png"
       width={32}
       //quality={100}
       alt="Wickidcool"
-       /> Wickidcool Software</span>
+       /> Wickidcool Software</Link></span>
 
       </div>
     </div>

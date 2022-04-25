@@ -68,13 +68,9 @@
                    alt="Wickidcool"
                    
              />
-            </div>
- 
-            </div>
- 
+            </div> 
+            </div> 
            </div>
-         
- 
        </section>
  
  <section className="Mentoringsec">

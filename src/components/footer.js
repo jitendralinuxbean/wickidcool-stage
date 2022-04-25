@@ -1,5 +1,4 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import { StaticImage } from "gatsby-plugin-image"
@@ -21,7 +20,7 @@ const Footer = ({ siteTitle }) => (
                     <div className="col-md-1"><span className="spcr"></span></div>
                     <div className="col-md-3">
                         <div className="footersocial">
-                            <span>
+                            <span><Link to="#">
                                 <StaticImage
                             src="../images/facebookIcon.png"
                             width={32}
@@ -30,22 +29,22 @@ const Footer = ({ siteTitle }) => (
                             formats={["auto", "webp", "avif"]}
                             style={{ marginRight: `10px` }}   
                             />
-                            @wickidcool</span>
+                            @wickidcool</Link></span>
 
-                            <span>
+                            <span><Link to="#">
                                 <StaticImage
                             src="../images/linkedInIcon.png"
                             width={32}
                             quality={100}
                             formats={["auto", "webp", "avif"]}
                             alt="Wickidcool"
-                            /> Wickidcool Software</span>
+                            /> Wickidcool Software</Link></span>
                         </div>
                     </div>
                     <div className="col-md-1"><span className="spcr"></span></div>
                     <div className="col-md-3">
                     <div className="footersocial">
-                            <span>
+                            <span><Link to="#">
                                 <StaticImage
                             src="../images/phoneIcon.png"
                             width={32}
@@ -53,15 +52,15 @@ const Footer = ({ siteTitle }) => (
                             quality={100}
                             formats={["auto", "webp", "avif"]}      
                             />
-                            (414) 614-3623</span>
+                            &nbsp;(414) 614-3623</Link></span>
 
-                            <span>
+                            <span><Link to="#">
                                 <StaticImage
                             src="../images/emailIcon.png"
                             width={32}
                             //quality={100}
                             alt="Wickidcool"
-                            /> info@wickidcool.com</span>
+                            /> info@wickidcool.com</Link></span>
                         </div>
                     </div>
                 </div>
